@@ -488,6 +488,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-of-core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapping of Core Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping of Core Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-1-core-concepts-in-ogc-edr-and-their-cco-counterparts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table 1: Core Concepts in OGC EDR and their CCO Counterparts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-2-selected-mappings-between-edr-and-cco-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table 2: Selected mappings between EDR and CCO concepts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -521,6 +562,87 @@
 <li><strong>Entities and Phenomena:</strong> Align environmental entities (edr:DataEntity) with the entities and qualities defined within CCO.</li>
 </ul>
 <p><strong>Mapping Framework Development:</strong> Utilize RDF/OWL, a widely used language for representing knowledge in a machine-readable format, to create the formal mapping framework for the shared ontology.</p>
+<h3 id="mapping-of-core-concepts"><strong>Mapping of Core Concepts</strong></h3>
+<h4 id="table-1-core-concepts-in-ogc-edr-and-their-cco-counterparts"><strong>Table 1: Core Concepts in OGC EDR and their CCO Counterparts</strong></h4>
+<table>
+<thead>
+<tr>
+<th>OGC EDR Concept</th>
+<th>Concept Definition</th>
+<th>CCO</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataEntity</code></td>
+<td>Represents a data resource (e.g., dataset or observation).</td>
+<td><code>cco:PhysicalEntity</code></td>
+<td>Aligns environmental data with physical representations.</td>
+</tr>
+<tr>
+<td><code>Geometry</code></td>
+<td>Spatial description of the entity (e.g., bounding box, CRS).</td>
+<td><code>cco:SpatialRegion</code></td>
+<td>Use spatial definitions in CCO to describe extents.</td>
+</tr>
+<tr>
+<td><code>Time</code></td>
+<td>Temporal range of the dataset or event.</td>
+<td><code>cco:TimeInterval</code></td>
+<td>CCO’s temporal structure supports precise intervals.</td>
+</tr>
+<tr>
+<td><code>Parameter</code></td>
+<td>Describes the measured variables (e.g., temperature, humidity).</td>
+<td><code>cco:Quality</code></td>
+<td>Relates parameters to measurable qualities in CCO.</td>
+</tr>
+<tr>
+<td><code>CoverageType</code></td>
+<td>Type of coverage (e.g., point, trajectory, grid).</td>
+<td>Custom mapping via bridge classes</td>
+<td>Not directly in CCO, so bridge concepts are needed.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="table-2-selected-mappings-between-edr-and-cco-concepts"><strong>Table 2: Selected mappings between EDR and CCO concepts</strong></h4>
+<table>
+<thead>
+<tr>
+<th>OGC EDR Concept</th>
+<th>CCO Concept</th>
+<th>Mapping Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feature of Interest (FOI)</td>
+<td><code>cco:SpatialRegion</code> or <code>cco:MaterialEntity</code></td>
+<td><strong>Example</strong>: A lake (<code>FOI</code>) -&gt; <code>cco:SpatialRegion</code> represents its geographical extent.</td>
+</tr>
+<tr>
+<td>Query (Spatial/Temporal)</td>
+<td><code>cco:Process</code></td>
+<td><strong>Example</strong>: A temporal query to retrieve rainfall data -&gt; <code>cco:Process</code> for data retrieval.</td>
+</tr>
+<tr>
+<td>Variable (e.g., temperature)</td>
+<td><code>cco:Attribute</code> + <code>cco:UnitOfMeasure</code></td>
+<td><strong>Example</strong>: Temperature -&gt; <code>cco:Attribute</code> with <code>UnitOfMeasure</code> in Celsius.</td>
+</tr>
+<tr>
+<td>Location (Coordinates)</td>
+<td><code>cco:Coordinate</code></td>
+<td><strong>Example</strong>: A latitude-longitude point -&gt; <code>cco:Coordinate</code>.</td>
+</tr>
+<tr>
+<td>Temporal Interval</td>
+<td><code>cco:TimeInterval</code></td>
+<td><strong>Example</strong>: 2023-01-01T00:00Z to 2023-01-02T00:00Z -&gt; <code>cco:TimeInterval</code>.</td>
+</tr>
+</tbody>
+</table>
 
 
 
