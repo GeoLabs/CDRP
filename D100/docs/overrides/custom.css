@@ -1,0 +1,20 @@
+/* Reduce the width of the left panel (sidebar) */
+.md-sidebar {
+    width: 200px; /* Adjust to your desired width */
+}
+
+.md-main {
+    margin-left: 200px; /* Match the sidebar width */
+}
+
+/* Remove padding from the right panel for the Demo page */
+body.demo-page .md-main__inner {
+    padding: 0; /* Removes padding for full-width content */
+}
+
+/* Ensure iframe spans full width and height */
+body.demo-page iframe {
+    width: 100%;
+    height: calc(100vh - 64px); /* Adjust for header height */
+    border: none;
+}

@@ -1,2 +1,2 @@
-# CRDP
-CRDP Research and development repository
+# CDRP
+CDRP Research and development repository
