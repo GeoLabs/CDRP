@@ -1,4 +1,10 @@
-# Climate and Disaster Resilience Pilots
-Welcome to the project webpage! Use the navigation panel to explore.
+# Climate and Disaster Resilience Pilot
 
 ![Overview](overrides/cdrp.png){ width=100% }
+
+Developed by-
+
+* Chetan Mahajan - IIT Bombay
+* Gerald Fenoy - GeoLabs
+* Dr. Rajat Shinde - UAH
+* Prof. Surya Durbha - IIT Bombay
