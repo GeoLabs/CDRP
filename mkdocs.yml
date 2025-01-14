@@ -1,0 +1,42 @@
+site_name: "Climate and Disaster Resilience Pilot"
+site_url: https://GeoLabs.github.io/CDRP/
+use_directory_urls: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tabs
+
+# Navigation structure
+nav:
+  - D100:
+      - Home: D100/index.md
+      - Objectives: D100/objectives.md
+      - Datasets: D100/datasets.md
+      - Methodology: D100/methodology.md
+      - Demo: D100/demo.md
+      - Future Directions: D100/future_directions.md
+  - D040:
+      - Index: D040/index.md
+
+docs_dir: docs
+site_dir: site
+
+# Plugins (optional but recommended)
+plugins:
+  - search
+
+# Extra configurations
+markdown_extensions:
+  - toc
+  - admonition
+  - footnotes
+  - codehilite
+  - pymdownx.superfences
+  - attr_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/geolabs/CDRP
