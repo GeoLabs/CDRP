@@ -4,7 +4,7 @@
 
 Developed by-
 
-* Chetan Mahajan - IIT Bombay
 * Gerald Fenoy - GeoLabs
 * Dr. Rajat Shinde - UAH
 * Prof. Surya Durbha - IIT Bombay
+* Chetan Mahajan - IIT Bombay

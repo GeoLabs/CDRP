@@ -18,7 +18,12 @@ nav:
       - Demo: D100/demo.md
       - Future Directions: D100/future_directions.md
   - D040:
-      - Index: D040/index.md
+      - Home: D040/index.md
+      - Introduction: D040/introduction.md
+      - Objectives: D040/objectives.md
+      - Methodology: D040/methodology.md
+      - Use Cases: D040/usecase.md
+
 
 docs_dir: docs
 site_dir: site

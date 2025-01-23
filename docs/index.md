@@ -1,1 +1,6 @@
+---
+hide:
+  - title
+---
+
 ![Overview](overrides/cdrp_main.jpeg){ width=100% }
