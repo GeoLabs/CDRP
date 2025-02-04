@@ -608,15 +608,21 @@
 
 <h1 id="findings-and-lessons-learned">Findings and Lessons Learned</h1>
 <p>The assistant enhances the data search and provides an interactive way to explore and learn more about the data sources provided by Copernicus dat stores.</p>
-<p>The user asks questions to the assistant and the assitant can answer using two ways. The two approaches are described below:
-* First approach (Local Database):
-    - Fetch data from various data sources
-    - Index the data in Chroma vector db
-    - Match the stored documents in database with the user query
-    - Return top 5 matching documents
-    - Using the 5 documents generate a response using LLM</p>
+<p>The user asks questions to the assistant and the assitant can answer using two ways. The two approaches are described below:</p>
 <ul>
-<li>Second approach (Web search):<ul>
+<li>
+<p>First approach (Local Database):</p>
+<ul>
+<li>Fetch data from various data sources</li>
+<li>Index the data in Chroma vector db</li>
+<li>Match the stored documents in database with the user query</li>
+<li>Return top 5 matching documents</li>
+<li>Using the 5 documents generate a response using LLM</li>
+</ul>
+</li>
+<li>
+<p>Second approach (Web search):</p>
+<ul>
 <li>For the given user query, find relevant web sources</li>
 <li>Fetch the data from these sources and index into a temporary collection in the vector database</li>
 <li>Match the query with the documents in database</li>
