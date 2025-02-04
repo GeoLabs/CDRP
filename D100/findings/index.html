@@ -640,12 +640,14 @@
 - llama3:latest
 - deepseek-r1:1.5b</p>
 <p>All of the above are open sourced models and can be adopted for usage.</p>
-<p>The main learnings of the process are outlined below:
-- The indexed data needs to be processed in a form of markdown which makes the indexing easier and in a way which LLMs can understand highlighing the need for a LLM friendly data format.
-- The data needs to be cleaned and then indexed, a lot of irrelevant or extra things will increase the total documents and increased time to find match
-- The local db search approach re-ranks the searched documents adopts BM25 algorithm
-- The response time in case of CPU is lot higher than the GPU response, hence scaling and providing more better results a GPU is necessity
-- The prompt given by user becomes very important for the case of web search</p>
+<p>The main learnings of the process are outlined below:</p>
+<ul>
+<li>The indexed data needs to be processed in a form of markdown which makes the indexing easier and in a way which LLMs can understand highlighing the need for a LLM friendly data format.</li>
+<li>The data needs to be cleaned and then indexed, a lot of irrelevant or extra things will increase the total documents and increased time to find match</li>
+<li>The local db search approach re-ranks the searched documents adopts BM25 algorithm</li>
+<li>The response time in case of CPU is lot higher than the GPU response, hence scaling and providing more better results a GPU is necessity</li>
+<li>The prompt given by user becomes very important for the case of web search</li>
+</ul>
 
 
 
