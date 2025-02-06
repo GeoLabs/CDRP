@@ -607,8 +607,8 @@
 
 
 <h1 id="findings-and-lessons-learned">Findings and Lessons Learned</h1>
-<p>The assistant enhances the data search and provides an interactive way to explore and learn more about the data sources provided by Copernicus dat stores.</p>
-<p>The user asks questions to the assistant and the assitant can answer using two ways. The two approaches are described below:</p>
+<p>The assistant enhances the data search and provides an interactive way to explore and learn more about the data sources provided by Copernicus data stores.</p>
+<p>The user asks questions to the assistant and the assistant can answer using two ways. The two approaches are described below:</p>
 <ul>
 <li>
 <p>First approach (Local Database):</p>
@@ -635,14 +635,14 @@
 <img alt="Overview" src="../overrides/cdrp2_d100methodology.svg" width="100%" /></p>
 <p>The LLM model can be changed as per user choice and the available options are:
 - phi4:latest
-- llama3.2:latest
-- llama3.1:8b
+- llama 3.2:latest
+- llama 3.1:8b
 - llama3:latest
 - deepseek-r1:1.5b</p>
 <p>All of the above are open sourced models and can be adopted for usage.</p>
 <p>The main learnings of the process are outlined below:</p>
 <ul>
-<li>The indexed data needs to be processed in a form of markdown which makes the indexing easier and in a way which LLMs can understand highlighing the need for a LLM friendly data format.</li>
+<li>The indexed data needs to be processed in a form of markdown which makes the indexing easier and in a way which LLMs can understand highlighting the need for a LLM friendly data format.</li>
 <li>The data needs to be cleaned and then indexed, a lot of irrelevant or extra things will increase the total documents and increased time to find match</li>
 <li>The local db search approach re-ranks the searched documents adopts BM25 algorithm</li>
 <li>The response time in case of CPU is lot higher than the GPU response, hence scaling and providing more better results a GPU is necessity</li>
