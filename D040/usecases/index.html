@@ -657,13 +657,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-rainfall-event-monitoring_1" class="md-nav__link">
+  <a href="#use-case-2-flood-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 1: Rainfall Event Monitoring
+      Use Case 2: Flood Monitoring
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Case 1: Rainfall Event Monitoring">
+    <nav class="md-nav" aria-label="Use Case 2: Flood Monitoring">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -843,13 +843,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-rainfall-event-monitoring_1" class="md-nav__link">
+  <a href="#use-case-2-flood-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 1: Rainfall Event Monitoring
+      Use Case 2: Flood Monitoring
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Case 1: Rainfall Event Monitoring">
+    <nav class="md-nav" aria-label="Use Case 2: Flood Monitoring">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1022,69 +1022,62 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="use-case-1-rainfall-event-monitoring_1">Use Case 1: Rainfall Event Monitoring</h2>
-<p>Below is an example RDF data snippet capturing various details related to a rainfall event.  </p>
+<h2 id="use-case-2-flood-monitoring">Use Case 2: Flood Monitoring</h2>
+<p>Below is an example RDF data snippet capturing various details related to a flood event.  </p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>  
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>  
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">ccoedr:</span><span class="w"> </span><span class="nv">&lt;http://www.example.org/ccoedr#&gt;</span><span class="w"> </span><span class="p">.</span>  
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>  
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">ccoedr:</span><span class="w"> </span><span class="nv">&lt;http://www.example.org/ccoedr#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nv">&lt;http://example.org/&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="c"># Rainfall Event  </span>
-<span class="nv">&lt;http://example.org/rainfall#RainfallEvent_2023&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Process</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Rainfall Event 2023&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nv">&lt;http://example.org/location#CityABC&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nv">&lt;http://example.org/time#Interval_2023&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasOutput</span> <span class="nv">&lt;http://example.org/data#RainfallDataset&gt;</span> <span class="p">.</span>  
+<span class="c"># Flood Event</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">flood</span><span class="c">#FloodEvent_2023 a ccoedr:Process ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Flood Event 2023&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">location</span><span class="c">#RiverXYZ ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">time</span><span class="c">#Interval_2023 ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasOutput</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">data</span><span class="c">#WaterLevelDataset .</span>
 
-<span class="c"># Location  </span>
-<span class="nv">&lt;http://example.org/location#CityABC&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;City ABC&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="nv">&lt;http://example.org/spatial#Region_CityABC&gt;</span> <span class="p">.</span>  
+<span class="c"># Location</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">location</span><span class="c">#RiverXYZ a ccoedr:Location ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;River XYZ&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">spatial</span><span class="c">#Region_RiverXYZ .</span>
 
-<span class="c"># Spatial Region  </span>
-<span class="nv">&lt;http://example.org/spatial#Region_CityABC&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Spatial Region of City ABC&quot;</span> <span class="p">.</span>  
+<span class="c"># Spatial Region</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">spatial</span><span class="c">#Region_RiverXYZ a ccoedr:SpatialRegion ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Spatial Region of River XYZ&quot;</span> <span class="p">.</span>
 
-<span class="c"># Temporal Region  </span>
-<span class="nv">&lt;http://example.org/time#Interval_2023&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;September 1-7, 2023&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasStartTime</span> <span class="s">&quot;2023-09-01T00:00:00Z&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasEndTime</span> <span class="s">&quot;2023-09-07T23:59:59Z&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">.</span>  
+<span class="c"># Temporal Region</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">time</span><span class="c">#Interval_2023 a ccoedr:TemporalRegion ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;October 1-5, 2023&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasStartTime</span> <span class="s">&quot;2023-10-01T00:00:00Z&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasEndTime</span> <span class="s">&quot;2023-10-05T23:59:59Z&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">.</span>
 
-<span class="c"># Sensor  </span>
-<span class="nv">&lt;http://example.org/sensor#Sensor_002&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">PhysicalObject</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Rainfall Sensor 002&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">locatedIn</span> <span class="nv">&lt;http://example.org/location#CityABC&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">measures</span> <span class="nv">&lt;http://example.org/parameter#Rainfall&gt;</span> <span class="p">.</span>  
+<span class="c"># Sensor</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">sensor</span><span class="c">#Sensor_001 a ccoedr:PhysicalObject ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Water Level Sensor 001&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">locatedIn</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">location</span><span class="c">#RiverXYZ ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">measures</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">parameter</span><span class="c">#WaterLevel .</span>
 
-<span class="c"># Parameter (Rainfall)  </span>
-<span class="nv">&lt;http://example.org/parameter#Rainfall&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Rainfall&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasUnit</span> <span class="s">&quot;millimeters&quot;</span> <span class="p">.</span>  
+<span class="c"># Parameter (Water Level)</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">parameter</span><span class="c">#WaterLevel a ccoedr:Parameter ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Water Level&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasUnit</span> <span class="s">&quot;meters&quot;</span> <span class="p">.</span>
 
-<span class="c"># Dataset  </span>
-<span class="nv">&lt;http://example.org/data#RainfallDataset&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Rainfall Dataset&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="nv">&lt;http://example.org/parameter#Rainfall&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nv">&lt;http://example.org/time#Interval_2023&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nv">&lt;http://example.org/location#CityABC&gt;</span> <span class="p">.</span>  
+<span class="c"># Dataset</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">data</span><span class="c">#WaterLevelDataset a ccoedr:Dataset ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Water Level Dataset&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">parameter</span><span class="c">#WaterLevel ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">time</span><span class="c">#Interval_2023 ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">location</span><span class="c">#RiverXYZ .</span>
 
-<span class="c"># Data Query  </span>
-<span class="nv">&lt;http://example.org/query#RainfallQuery&gt;</span>  
-    <span class="kt">a</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DataQuery</span> <span class="p">;</span>  
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Rainfall Data Query&quot;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="nv">&lt;http://example.org/parameter#Rainfall&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nv">&lt;http://example.org/location#CityABC&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nv">&lt;http://example.org/time#Interval_2023&gt;</span> <span class="p">;</span>  
-    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">retrieves</span> <span class="nv">&lt;http://example.org/data#RainfallDataset&gt;</span> <span class="p">.</span> 
+<span class="c"># Data Query</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">query</span><span class="c">#WaterLevelQuery a ccoedr:DataQuery ;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Water Level Data Query&quot;</span> <span class="p">;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">parameter</span><span class="c">#WaterLevel ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">location</span><span class="c">#RiverXYZ ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">time</span><span class="c">#Interval_2023 ;</span>
+    <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">retrieves</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">data</span><span class="c">#WaterLevelDataset .</span>
 </code></pre></div>
 <hr />
 <h3 id="sparql-queries_1"><strong>SPARQL Queries</strong></h3>
