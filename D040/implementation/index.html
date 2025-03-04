@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://GeoLabs.github.io/CDRP/D040/implemenation/">
+        <link rel="canonical" href="https://GeoLabs.github.io/CDRP/D040/implementation/">
       
       
+        <link rel="prev" href="../methodology/">
+      
+      
+        <link rel="next" href="../usecases/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Implemenation - Climate and Disaster Resilience Pilot</title>
+        <title>Implementation - Climate and Disaster Resilience Pilot</title>
       
     
     
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implemenation
+              Implementation
             
           </span>
         </div>
@@ -179,10 +183,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -404,25 +410,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -433,7 +444,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             D040
@@ -528,10 +539,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../implementation.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Implementation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -540,6 +569,162 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ** Technical Implementation**
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="** Technical Implementation**">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-1-comprehensive-mapping-between-cco-and-ogc-edr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table 1. Comprehensive Mapping between CCO and OGC EDR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-linkbridge-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Link/Bridge Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-shared-ontology-ccoedr" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Shared Ontology (ccoedr):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-shacl-schema-for-the-shared-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. SHACL Schema for the Shared Ontology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. SHACL Schema for the Shared Ontology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-spatial-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Spatial Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-temporal-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Temporal Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Parameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Dataset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-sensor-physical-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Sensor (Physical Object)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape-for-data-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape for Data Query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantically-annotated-ogc-edr-example-data-using-the-shared-ontology-in-json-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantically Annotated OGC EDR Example Data using the Shared Ontology in JSON-LD
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
