@@ -2,54 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://GeoLabs.github.io/CDRP/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D040/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
+    </url>
+    <url>
+         <loc>https://GeoLabs.github.io/CDRP/D040/conclusion/</loc>
+         <lastmod>2025-03-04</lastmod>
+    </url>
+    <url>
+         <loc>https://GeoLabs.github.io/CDRP/D040/implemenation/</loc>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D040/introduction/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D040/methodology/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
+    </url>
+    <url>
+         <loc>https://GeoLabs.github.io/CDRP/D040/methodology_old/</loc>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D040/objectives/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
-         <loc>https://GeoLabs.github.io/CDRP/D040/usecase/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <loc>https://GeoLabs.github.io/CDRP/D040/usecase_old/</loc>
+         <lastmod>2025-03-04</lastmod>
+    </url>
+    <url>
+         <loc>https://GeoLabs.github.io/CDRP/D040/usecases/</loc>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/datasets/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/demo/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/findings/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/future_directions/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/methodology/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
     <url>
          <loc>https://GeoLabs.github.io/CDRP/D100/objectives/</loc>
-         <lastmod>2025-02-06</lastmod>
+         <lastmod>2025-03-04</lastmod>
     </url>
 </urlset>
