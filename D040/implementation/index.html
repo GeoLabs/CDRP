@@ -594,9 +594,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-1-comprehensive-mapping-between-cco-and-ogc-edr" class="md-nav__link">
+  <a href="#table-1-cross-walk-between-cco-and-ogc-edr" class="md-nav__link">
     <span class="md-ellipsis">
-      Table 1. Comprehensive Mapping between CCO and OGC EDR
+      Table 1. Cross-Walk between CCO and OGC EDR
     </span>
   </a>
   
@@ -627,8 +627,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SHACL Schema for the Shared Ontology">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#shape-for-location" class="md-nav__link">
@@ -699,11 +698,6 @@
       Shape for Data Query
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -835,9 +829,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-1-comprehensive-mapping-between-cco-and-ogc-edr" class="md-nav__link">
+  <a href="#table-1-cross-walk-between-cco-and-ogc-edr" class="md-nav__link">
     <span class="md-ellipsis">
-      Table 1. Comprehensive Mapping between CCO and OGC EDR
+      Table 1. Cross-Walk between CCO and OGC EDR
     </span>
   </a>
   
@@ -868,8 +862,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SHACL Schema for the Shared Ontology">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#shape-for-location" class="md-nav__link">
@@ -947,11 +940,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#semantically-annotated-ogc-edr-example-data-using-the-shared-ontology-in-json-ld" class="md-nav__link">
@@ -980,8 +968,8 @@
 <h2 id="technical-implementation">Technical Implementation</h2>
 <p>CCO provides a broader and more general ontology for modeling entities, processes, qualities, and relationships, making it suitable for semantic interoperability across domains.</p>
 <p>EDR is narrower and focuses specifically on environmental data retrieval through APIs, with concepts.</p>
-<p>Table 1 below provides a mapping between CCO and OGC EDR  showing the BroderThan, NarrowerThan and similar concepts</p>
-<h3 id="table-1-comprehensive-mapping-between-cco-and-ogc-edr"><strong>Table 1. Comprehensive Mapping between CCO and OGC EDR</strong></h3>
+<p>Table 1 below provides a mapping between CCO and OGC EDR  showing the BroaderThan, NarrowerThan and similar concepts</p>
+<h3 id="table-1-cross-walk-between-cco-and-ogc-edr"><strong>Table 1. Cross-Walk  between CCO and OGC EDR</strong></h3>
 <table>
 <thead>
 <tr>
@@ -989,7 +977,6 @@
 <th style="text-align: left;">CCO Concept/Property</th>
 <th style="text-align: left;">EDR Concept/Property</th>
 <th style="text-align: left;">Relationship</th>
-<th style="text-align: left;">Remarks</th>
 </tr>
 </thead>
 <tbody>
@@ -998,102 +985,87 @@
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td>Object</td>
 <td style="text-align: left;">cco:Object</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models physical and abstract objects.</td>
 </tr>
 <tr>
 <td>Physical Object</td>
 <td style="text-align: left;">cco:PhysicalObject</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models tangible entities.</td>
 </tr>
 <tr>
 <td>Process</td>
 <td style="text-align: left;">cco:Process</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models activities or events.</td>
 </tr>
 <tr>
 <td>Event</td>
 <td style="text-align: left;">cco:Event</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models specific occurrences.</td>
 </tr>
 <tr>
 <td>Quality</td>
 <td style="text-align: left;">cco:Quality</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models attributes or properties of entities.</td>
 </tr>
 <tr>
 <td>Location</td>
 <td style="text-align: left;">cco:Location</td>
 <td style="text-align: left;">edr:Location</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model spatial regions or places.</td>
 </tr>
 <tr>
 <td>Spatial Region</td>
 <td style="text-align: left;">cco:SpatialRegion</td>
 <td style="text-align: left;">edr:SpatialExtent</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model spatial areas.</td>
 </tr>
 <tr>
 <td>Temporal Region</td>
 <td style="text-align: left;">cco:TemporalRegion</td>
 <td style="text-align: left;">edr:TemporalExtent</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model time intervals.</td>
 </tr>
 <tr>
 <td>Parameter</td>
 <td style="text-align: left;">cco:Parameter</td>
 <td style="text-align: left;">edr:Parameter</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model measurable properties.</td>
 </tr>
 <tr>
 <td>Information Object</td>
 <td style="text-align: left;">cco:InformationObject</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models data or representations.</td>
 </tr>
 <tr>
 <td>Dataset</td>
 <td style="text-align: left;">cco:Dataset</td>
 <td style="text-align: left;">edr:Dataset</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model collections of data.</td>
 </tr>
 <tr>
 <td>Measurement</td>
 <td style="text-align: left;">cco:Measurement</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models quantified observations.</td>
 </tr>
 <tr>
 <td>Data Query</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No correspondence in CCO</td>
 <td style="text-align: left;">edr:DataQuery</td>
 <td style="text-align: left;">Narrower in EDR</td>
-<td style="text-align: left;">EDR focuses on data retrieval requests.</td>
 </tr>
 <tr>
 <td><strong>Properties/Relationships</strong></td>
-<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -1101,69 +1073,59 @@
 <tr>
 <td>hasQuality</td>
 <td style="text-align: left;">cco:hasQuality</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO links entities to their qualities.</td>
 </tr>
 <tr>
 <td>locatedIn</td>
 <td style="text-align: left;">cco:locatedIn</td>
 <td style="text-align: left;">edr:hasLocation</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both link entities to locations.</td>
 </tr>
 <tr>
 <td>participatesIn</td>
 <td style="text-align: left;">cco:participatesIn</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO links entities to processes.</td>
 </tr>
 <tr>
 <td>hasParameter</td>
 <td style="text-align: left;">cco:hasParameter</td>
 <td style="text-align: left;">edr:hasParameter</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both link processes or queries to parameters.</td>
 </tr>
 <tr>
 <td>hasPart</td>
 <td style="text-align: left;">cco:hasPart</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO links entities to their components.</td>
 </tr>
 <tr>
 <td>hasTemporalRegion</td>
 <td style="text-align: left;">cco:hasTemporalRegion</td>
 <td style="text-align: left;">edr:hasTemporalExtent</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both link entities to time intervals.</td>
 </tr>
 <tr>
 <td>hasValue</td>
 <td style="text-align: left;">cco:hasValue</td>
 <td style="text-align: left;">edr:hasValue</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both link measurements or parameters to values.</td>
 </tr>
 <tr>
 <td>hasUnit</td>
 <td style="text-align: left;">cco:hasUnit</td>
 <td style="text-align: left;">edr:hasUnit</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both link measurements or parameters to units.</td>
 </tr>
 <tr>
 <td>hasOutput</td>
 <td style="text-align: left;">cco:hasOutput</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO links processes to their results.</td>
 </tr>
 <tr>
 <td><strong>Spatial/Temporal Types</strong></td>
-<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -1173,39 +1135,33 @@
 <td style="text-align: left;">cco:Point</td>
 <td style="text-align: left;">edr:Point</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model point geometries.</td>
 </tr>
 <tr>
 <td>Line</td>
 <td style="text-align: left;">cco:Line</td>
 <td style="text-align: left;">edr:Line</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model line geometries.</td>
 </tr>
 <tr>
 <td>Polygon</td>
 <td style="text-align: left;">cco:Polygon</td>
 <td style="text-align: left;">edr:Polygon</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model polygon geometries.</td>
 </tr>
 <tr>
 <td>Instant</td>
 <td style="text-align: left;">cco:Instant</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models specific points in time.</td>
 </tr>
 <tr>
 <td>Interval</td>
 <td style="text-align: left;">cco:Interval</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models time intervals with start and end points.</td>
 </tr>
 <tr>
 <td><strong>Data and Measurements</strong></td>
-<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -1213,34 +1169,29 @@
 <tr>
 <td>Information Object</td>
 <td style="text-align: left;">cco:InformationObject</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models data or representations.</td>
 </tr>
 <tr>
 <td>Measurement</td>
 <td style="text-align: left;">cco:Measurement</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models quantified observations.</td>
 </tr>
 <tr>
 <td>Dataset</td>
 <td style="text-align: left;">cco:Dataset</td>
 <td style="text-align: left;">edr:Dataset</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model collections of data.</td>
 </tr>
 <tr>
 <td>Data Query</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in CCO</td>
 <td style="text-align: left;">edr:DataQuery</td>
 <td style="text-align: left;">Narrower in EDR</td>
-<td style="text-align: left;">EDR focuses on data retrieval requests.</td>
 </tr>
 <tr>
 <td><strong>Qualities and Parameters</strong></td>
-<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -1248,16 +1199,14 @@
 <tr>
 <td>Quality</td>
 <td style="text-align: left;">cco:Quality</td>
-<td style="text-align: left;">Not explicitly modeled</td>
+<td style="text-align: left;">No direct correspondence in EDR</td>
 <td style="text-align: left;">Broader in CCO</td>
-<td style="text-align: left;">CCO models attributes or properties of entities.</td>
 </tr>
 <tr>
 <td>Parameter</td>
 <td style="text-align: left;">cco:Parameter</td>
 <td style="text-align: left;">edr:Parameter</td>
 <td style="text-align: left;">Similar</td>
-<td style="text-align: left;">Both model measurable properties.</td>
 </tr>
 </tbody>
 </table>
@@ -1267,10 +1216,9 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Bridge Concept</th>
+<th style="text-align: left;">Bridge/Link Concept</th>
 <th style="text-align: left;">CCO Concept</th>
 <th style="text-align: left;">OGC EDR Concept</th>
-<th style="text-align: left;">Remarks</th>
 </tr>
 </thead>
 <tbody>
@@ -1278,451 +1226,653 @@
 <td style="text-align: left;">EnvironmentalData</td>
 <td style="text-align: left;">cco:InformationContentEntity</td>
 <td style="text-align: left;">edr:EnvironmentalData</td>
-<td style="text-align: left;">Represents environmental data.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Sensor</td>
 <td style="text-align: left;">cco:Device</td>
 <td style="text-align: left;">edr:Sensor</td>
-<td style="text-align: left;">Represents a device that measures environmental data.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Observation</td>
 <td style="text-align: left;">cco:Process</td>
 <td style="text-align: left;">edr:Observation</td>
-<td style="text-align: left;">Represents the act of observing environmental data.</td>
 </tr>
 <tr>
 <td style="text-align: left;">FeatureOfInterest</td>
 <td style="text-align: left;">cco:Object</td>
 <td style="text-align: left;">edr:FeatureOfInterest</td>
-<td style="text-align: left;">Represents the entity being observed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Measurement</td>
 <td style="text-align: left;">cco:QualityValue</td>
 <td style="text-align: left;">edr:Measurement</td>
-<td style="text-align: left;">Represents a quantitative value of an observation.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Location</td>
 <td style="text-align: left;">cco:SpatialLocation</td>
 <td style="text-align: left;">edr:Location</td>
-<td style="text-align: left;">Represents a spatial location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Time</td>
 <td style="text-align: left;">cco:TemporalLocation</td>
 <td style="text-align: left;">edr:Time</td>
-<td style="text-align: left;">Represents a temporal location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">hasLocation</td>
 <td style="text-align: left;">cco:hasSpatialLocation</td>
 <td style="text-align: left;">edr:hasLocation</td>
-<td style="text-align: left;">Links an entity to its spatial location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">hasTime</td>
 <td style="text-align: left;">cco:hasTemporalLocation</td>
 <td style="text-align: left;">edr:hasTime</td>
-<td style="text-align: left;">Links an entity to its temporal location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">observes</td>
 <td style="text-align: left;">cco:performs</td>
 <td style="text-align: left;">edr:observes</td>
-<td style="text-align: left;">Links a sensor to the observation it performs.</td>
 </tr>
 </tbody>
 </table>
 <p>Using the bridge concepts and the concept mappings described above the shared ontology is shown below.</p>
 <h3 id="shared-ontology-ccoedr"><strong>Shared Ontology (ccoedr):</strong></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
-<span class="nt">&lt;rdf:RDF</span><span class="w"> </span><span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
-<span class="w">         </span><span class="na">xmlns:owl=</span><span class="s">&quot;http://www.w3.org/2002/07/owl#&quot;</span>
-<span class="w">         </span><span class="na">xmlns:rdfs=</span><span class="s">&quot;http://www.w3.org/2000/01/rdf-schema#&quot;</span>
-<span class="w">         </span><span class="na">xmlns:cco=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies/&quot;</span>
-<span class="w">         </span><span class="na">xmlns:edr=</span><span class="s">&quot;http://www.opengis.net/ont/edr#&quot;</span>
-<span class="w">         </span><span class="na">xmlns:ccoedr=</span><span class="s">&quot;http://www.example.org/ccoedr#&quot;</span><span class="nt">&gt;</span>
+<p>The Shared ontology or reference ontology (ccoedr)  serves as the top level ontology that has more expressive terminology.  Below is the shared ontology representationin OWL.<br />
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span><span class="w">  </span>
+<span class="nt">&lt;rdf:RDF</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2002/07/owl\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xml:base=</span><span class="s">&quot;http://www.w3.org/2002/07/owl&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:cco=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:edr=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:owl=</span><span class="s">&quot;http://www.w3.org/2002/07/owl\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:xml=</span><span class="s">&quot;http://www.w3.org/XML/1998/namespace&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:xsd=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:rdfs=</span><span class="s">&quot;http://www.w3.org/2000/01/rdf-schema\#&quot;</span><span class="w">  </span>
+<span class="w">     </span><span class="na">xmlns:ccoedr=</span><span class="s">&quot;http://www.example.org/ccoedr\#&quot;</span><span class="nt">&gt;</span><span class="w">  </span>
+<span class="w">    </span><span class="nt">&lt;Ontology/&gt;</span><span class="w">  </span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Shared Classes --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;SpatialRegion&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;SpatialRegion&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;SpatialExtent&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Location&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Location&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Location&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!--   </span>
+<span class="cm">    ///////////////////////////////////////////////////////////////////////////////////////  </span>
+<span class="cm">    //  </span>
+<span class="cm">    // Object Properties  </span>
+<span class="cm">    //  </span>
+<span class="cm">    ///////////////////////////////////////////////////////////////////////////////////////  </span>
+<span class="cm">    --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Parameter&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Parameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Parameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasLocation --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasLocation&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#locatedIn&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasLocation&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;TemporalRegion&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;TemporalRegion&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;TemporalExtent&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasOutput --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasOutput&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasOutput&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;inverseOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.example.org/ccoedr\#retrieves&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;propertyChainAxiom</span><span class="w"> </span><span class="na">rdf:parseType=</span><span class="s">&quot;Collection&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasOutput&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#retrieves&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/propertyChainAxiom&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Dataset&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Dataset&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Dataset&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasParameter --&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Broader CCO Classes (Not in EDR) --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Process&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Process&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasParameter&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasParameter&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasParameter&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;inverseOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.example.org/ccoedr\#measures&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;propertyChainAxiom</span><span class="w"> </span><span class="na">rdf:parseType=</span><span class="s">&quot;Collection&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasParameter&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#measures&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/propertyChainAxiom&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Event&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Event&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasQuality --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasQuality&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasQuality&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasTemporalExtent --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Quality&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Quality&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasTemporalExtent&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasTemporalRegion&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasTemporalExtent&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Measurement&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Measurement&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasUnit --&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Narrower EDR Classes (Not in CCO) --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;DataQuery&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;DataQuery&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasUnit&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasUnit&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Shared Properties --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasLocation&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;locatedIn&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;hasLocation&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#hasValue --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasParameter&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;hasParameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;hasParameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#hasValue&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasValue&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasTemporalExtent&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;hasTemporalRegion&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;hasTemporalExtent&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#measures --&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Broader CCO Properties (Not in EDR) --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasQuality&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;hasQuality&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#measures&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;participatesIn&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;participatesIn&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#participatesIn --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasOutput&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;hasOutput&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#participatesIn&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#participatesIn&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ObjectProperty&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Narrower EDR Properties (Not in CCO) --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasValue&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;hasValue&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#retrieves --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasUnit&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subPropertyOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;hasUnit&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#retrieves&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Spatial/Temporal Types --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Point&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Point&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Point&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#hasOutput --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasOutput&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Line&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Line&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Line&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#hasParameter --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Polygon&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Polygon&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;edr;Polygon&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasParameter&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Broader CCO Temporal Types --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Instant&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Instant&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#hasQuality --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;Interval&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;cco;Interval&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:Class&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasQuality&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="cm">&lt;!-- Axioms for Reasoning --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasOutput&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;owl:propertyChainAxiom</span><span class="w"> </span><span class="na">rdf:parseType=</span><span class="s">&quot;Collection&quot;</span><span class="nt">&gt;</span>
-<span class="w">      </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasOutput&quot;</span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;retrieves&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/owl:propertyChainAxiom&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#hasTemporalRegion --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;measures&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;owl:inverseOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;ccoedr;hasParameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#hasTemporalRegion&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasParameter&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;owl:propertyChainAxiom</span><span class="w"> </span><span class="na">rdf:parseType=</span><span class="s">&quot;Collection&quot;</span><span class="nt">&gt;</span>
-<span class="w">      </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;hasParameter&quot;</span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;rdf:Description</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;measures&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/owl:propertyChainAxiom&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#locatedIn --&gt;</span>
 
-<span class="w">  </span><span class="nt">&lt;owl:ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;ccoedr;retrieves&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;owl:inverseOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;ccoedr;hasOutput&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/owl:ObjectProperty&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#locatedIn&quot;</span><span class="nt">/&gt;</span>
 
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#participatesIn --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#participatesIn&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#hasLocation --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasLocation&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#hasParameter --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasParameter&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#hasTemporalExtent --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasTemporalExtent&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#hasUnit --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasUnit&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#hasValue --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;ObjectProperty</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#hasValue&quot;</span><span class="nt">/&gt;</span>
+
+
+<span class="w">    </span><span class="cm">&lt;!--   </span>
+<span class="cm">    ///////////////////////////////////////////////////////////////////////////////////////  </span>
+<span class="cm">    //  </span>
+<span class="cm">    // Classes  </span>
+<span class="cm">    //  </span>
+<span class="cm">    ///////////////////////////////////////////////////////////////////////////////////////  </span>
+<span class="cm">     --&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#DataQuery --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#DataQuery&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#DataQuery&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Dataset --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Dataset&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Dataset&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Dataset&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Event --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Event&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Event&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Instant --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Instant&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Instant&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Interval --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Interval&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Interval&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Line --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Line&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Line&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Line&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Location --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Location&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Location&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Location&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Measurement --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Measurement&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Measurement&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Parameter --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Parameter&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Parameter&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Parameter&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Point --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Point&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Point&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Point&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Polygon --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Polygon&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Polygon&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Polygon&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Process --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Process&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Process&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#Quality --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#Quality&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Quality&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#SpatialRegion --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#SpatialRegion&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#SpatialRegion&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#SpatialExtent&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.example.org/ccoedr\#TemporalRegion --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.example.org/ccoedr\#TemporalRegion&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#TemporalRegion&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;rdfs:subClassOf</span><span class="w"> </span><span class="na">rdf:resource=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#TemporalExtent&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Class&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Dataset --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Dataset&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Event --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Event&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Instant --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Instant&quot;</span><span class="nt">/&gt;</span>
+
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Interval --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Interval&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Line --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Line&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Location --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Location&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Measurement --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Measurement&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Parameter --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Parameter&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Point --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Point&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Polygon --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Polygon&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Process --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Process&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#Quality --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#Quality&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#SpatialRegion --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#SpatialRegion&quot;</span><span class="nt">/&gt;</span>
+
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.ontologyrepository.com/CommonCoreOntologies\#TemporalRegion --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.ontologyrepository.com/CommonCoreOntologies\#TemporalRegion&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#DataQuery --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#DataQuery&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Dataset --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Dataset&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Line --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Line&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Location --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Location&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Parameter --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Parameter&quot;</span><span class="nt">/&gt;</span>
+
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Point --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Point&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#Polygon --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#Polygon&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#SpatialExtent --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#SpatialExtent&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- http://www.opengis.net/ont/edr\#TemporalExtent --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;Class</span><span class="w"> </span><span class="na">rdf:about=</span><span class="s">&quot;http://www.opengis.net/ont/edr\#TemporalExtent&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/rdf:RDF&gt;</span>
 </code></pre></div>
+<img alt="Visualization of the Shared ontology (ccoedr)" src="../overrides/Visualisation.jpg" width="100%" /></p>
 <hr />
 <h3 id="shacl-schema-for-the-shared-ontology"><strong>SHACL Schema for the Shared Ontology</strong></h3>
-<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">sh:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/ns/shacl#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">cco:</span><span class="w"> </span><span class="nv">&lt;http://www.ontologyrepository.com/CommonCoreOntologies/&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">edr:</span><span class="w"> </span><span class="nv">&lt;http://www.opengis.net/ont/edr#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">ccoedr:</span><span class="w"> </span><span class="nv">&lt;http://www.example.org/ccoedr#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<div class="highlight"><pre><span></span><code><span class="err">@prefix</span> <span class="nn">rdf</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">w</span><span class="mi">3</span><span class="p">.</span><span class="err">org/</span><span class="mi">1999</span><span class="err">/</span><span class="mi">02</span><span class="err">/</span><span class="mi">22</span><span class="err">-rdf-syntax-ns\</span><span class="c">#&gt; .  </span>
+<span class="err">@prefix</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">w</span><span class="mi">3</span><span class="p">.</span><span class="err">org/</span><span class="mi">2000</span><span class="err">/</span><span class="mi">01</span><span class="err">/rdf-schema\</span><span class="c">#&gt; .  </span>
+<span class="err">@prefix</span> <span class="nn">sh</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">w</span><span class="mi">3</span><span class="p">.</span><span class="err">org/ns/shacl\</span><span class="c">#&gt; .  </span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">cco:</span><span class="w"> </span><span class="nv">&lt;http://www.ontologyrepository.com/CommonCoreOntologies/&gt;</span><span class="w"> </span><span class="p">.</span>  
+<span class="err">@prefix</span> <span class="nn">edr</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">opengis</span><span class="p">.</span><span class="err">net/ont/edr\</span><span class="c">#&gt; .  </span>
+<span class="err">@prefix</span> <span class="nn">ccoedr</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">example</span><span class="p">.</span><span class="err">org/ccoedr\</span><span class="c">#&gt; .  </span>
+<span class="err">@prefix</span> <span class="nn">xsd</span><span class="p">:</span> <span class="err">&lt;</span><span class="nn">http</span><span class="p">:</span><span class="err">//www</span><span class="p">.</span><span class="err">w</span><span class="mi">3</span><span class="p">.</span><span class="err">org/</span><span class="mi">2001</span><span class="err">/XMLSchema\</span><span class="c">#&gt; .</span>
 </code></pre></div>
-<h4 id="shape-for-location">Shape for Location</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">LocationShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-location">Shape for Location</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">LocationShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-spatial-region">Shape for Spatial Region</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegionShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-spatial-region">Shape for Spatial Region</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegionShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SpatialRegion</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-temporal-region">Shape for Temporal Region</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegionShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasStartTime</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasEndTime</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-temporal-region">Shape for Temporal Region</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegionShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasStartTime</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasEndTime</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-parameter">Shape for Parameter</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">ParameterShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasUnit</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-parameter">Shape for Parameter</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">ParameterShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasUnit</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-dataset">Shape for Dataset</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DatasetShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-dataset">Shape for Dataset</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DatasetShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-process">Shape for Process</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">ProcessShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Process</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasOutput</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-process">Shape for Process</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">ProcessShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Process</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasOutput</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-sensor-physical-object">Shape for Sensor (Physical Object)</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SensorShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">PhysicalObject</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">locatedIn</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">measures</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-sensor-physical-object">Shape for Sensor (Physical Object)</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">SensorShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">PhysicalObject</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">locatedIn</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">measures</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<h4 id="shape-for-data-query">Shape for Data Query</h4>
-<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DataQueryShape</span>
-    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DataQuery</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">retrieves</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>
-        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-    <span class="p">]</span> <span class="p">.</span>
+<h3 id="shape-for-data-query">Shape for Data Query</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DataQueryShape</span>  
+    <span class="kt">a</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">targetClass</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">DataQuery</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasParameter</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Parameter</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasLocation</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Location</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">hasTemporalExtent</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">TemporalRegion</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span> <span class="p">;</span>  
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">retrieves</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">ccoedr</span><span class="p">:</span><span class="nt">Dataset</span> <span class="p">;</span>  
+        <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>  
+    <span class="p">]</span>
 </code></pre></div>
-<p>The above SHACL schema defines constraints and validation rules to ensure that the data conforms to the structure and relationships defined in the CCO-EDR shared ontology.</p>
+<p>The above SHACL schema defines constraints and validation rules to ensure that the data conforms to the structure and relationships defined in the CCO-EDR shared ontology. The UML representation of the SHACL above is shown in figure below.
+<img alt="UML representation of SHACL schema" src="../overrides/UML_rep_SHACL_sharedOntology.png" width="100%" /></p>
 <h1 id="semantically-annotated-ogc-edr-example-data-using-the-shared-ontology-in-json-ld">Semantically Annotated OGC EDR Example Data using the Shared Ontology in JSON-LD</h1>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@type&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@graph&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cco&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.ontologyrepository.com/CommonCoreOntologies/&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;ccoedr&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.example.org/ccoedr#&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;edr&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.opengis.net/ont/edr#&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;rdf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;rdfs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2000/01/rdf-schema#&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;xsd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.org/data#RainfallDataset_2020&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:Dataset&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rainfall Dataset 2020&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;ccoedr:hasParameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.org/parameter#Rainfall&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:Parameter&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rainfall&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;ccoedr:hasUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;millimeters&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;ccoedr:hasTemporalExtent&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.org/time#Interval_2020&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:TemporalRegion&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;October 1-7, 2020&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;ccoedr:hasStartTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-01T00:00:00Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;ccoedr:hasEndTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-07T23:59:59Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;ccoedr:hasLocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.org/location#XYZLocation&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:Location&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XYZ location&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;ccoedr:SpatialRegion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.org/spatial#Region_XYZLocation&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:SpatialRegion&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Spatial Region of XYZ location&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;edr:data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;edr:DataPoint&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;edr:time&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-01T12:00:00Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;edr:value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">13.2</span>
+<span class="w">    </span><span class="nt">&quot;sh&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/ns/shacl#&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;xsd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;DataQueryShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:DataQueryShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;DatasetShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:DatasetShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;FloodEventShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:FloodEventShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;LocationShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:LocationShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ParameterShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:ParameterShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;SensorShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:SensorShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TemporalRegionShape&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:TemporalRegionShape&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasEndTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasEndTime&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;edr:DataPoint&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;edr:time&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-02T12:00:00Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;edr:value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">16.5</span>
+<span class="w">    </span><span class="nt">&quot;hasLocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasLocation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;edr:DataPoint&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;edr:time&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-10-03T12:00:00Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;edr:value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.7</span>
+<span class="w">    </span><span class="nt">&quot;hasOutput&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasOutput&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@set&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasParameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasParameter&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@set&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasStartTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasStartTime&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasTemporalExtent&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasTemporalExtent&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:hasUnit&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;rdfs:label&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;locatedIn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:locatedIn&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;measures&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:measures&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@set&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;retrieves&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:retrieves&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@container&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@set&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;SpatialRegion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ccoedr:SpatialRegion&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>The above JSON-LD document represents a semantically annotated dataset using the Shared Ontology. It includes metadata such as temporal extent, location, and associated parameters while conforming to the OGC Environmental Data Retrieval (EDR) standard.</p>
